@@ -1,1 +1,13 @@
-<p>birds works!</p>
+<p>Birds of Mumbai!</p>
+<br>
+<div *ngFor="let content of birdsContent">
+    <app-content
+      [header]="content.header"
+      [headerLink]="content.headerLink"
+      [img]="content.img"
+      [imgLink]="content.imgLink"
+      [lastUpdated]="content.lastUpdated"
+      [content]="content.content"
+      [button]="content.button"
+      ></app-content>
+  </div>

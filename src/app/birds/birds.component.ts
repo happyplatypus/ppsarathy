@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {AllContentService} from '../all-content.service';
+
 
 @Component({
   selector: 'app-birds',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BirdsComponent implements OnInit {
 
-  constructor() { }
+  
+  birdsContent = null;
+
+  constructor(public allContents: AllContentService) {
+    this.birdsContent = allContents.getBirdsContent();
+    console.log(this.birdsContent)
+  }
+
 
   ngOnInit(): void {
   }
 
 }
+
+
