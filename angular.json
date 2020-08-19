@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ppsarathy",
+            "outputPath": "docs/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ppsarathy"
+    }
+  },
+  "defaultProject": "ppsarathy",
+  "cli": {
+    "analytics": "cd51351c-0e65-4d04-a485-b642e9481cc0"
+  }
 }
